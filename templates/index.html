@@ -2,16 +2,28 @@
 <html lang="uk">
     <head>
         <meta charset="UTF-8">
-        <title>Редагувати пісню</title>
+        <title>Редагувати виконавця</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Редагувати виконавця</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
         <div class="box">
+        <h3>Редагувати виконавця</h3>
+        <form method="post">
+            <input type="text" name="title" value="{{ task.title }}" required>
+            <button type="submit">Зберегти</button>
+        </form>
+        <title>Редагувати виконавця</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+            </div>
+        <div class="box">
         <h3>Редагувати пісню</h3>
         <form method="post">
-            <input type="text" name="title" value="{{ music.title }}" required>
-            <button type="submit">Збергти</button>
+            <input type="text" name="title" value="{{ task.title }}" required>
+            <button type="submit">Зберегти</button>
         </form>
+            <title>Редагувати пісню</title>
     </div>
     </body>
 </html>
